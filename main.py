@@ -12,7 +12,7 @@ from fastapi import FastAPI, Depends, HTTPException
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from starlette import status
 
-DATABASE_URL = "postgresql://postgres:postgrespw@localhost:49153/DBElinag"
+DATABASE_URL = "postgresql://postgres:postgrespw@db/db"
 
 engine = create_engine(DATABASE_URL)
 metadata = MetaData()
