@@ -9,11 +9,13 @@ import globalComponents from './components/Global/global'
 import MainPage from './components/MainPage/mainPage'
 import router from './router/router'
 
+
 const app = createApp(App)
 
 app.use(headerComponents)
 app.use(footerComponents)
 app.use(globalComponents)
+// app.use(YmapPlugin, settings)
 app.use(router)
 
 app.mount('#app')

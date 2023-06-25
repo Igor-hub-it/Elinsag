@@ -3,6 +3,14 @@
 
 // const map = yandexMap;
 
+const settings = {
+  apiKey: '',
+  lang: 'ru_RU',
+  coordorder: 'latlong',
+  enterprise: false,
+  version: '2.1'
+}
+
 </script>
 
 <template>
@@ -11,9 +19,11 @@
         <div class="contacts-map__title">
             Где мы находимся
         </div>
-        <div class="contacts-map__map">
-
-        </div>
+        <!-- <div class="contacts-map__map">
+            <yandex-map :settings="settings">
+                Markers
+            </yandex-map>
+        </div> -->
     </div>
   
 </template>

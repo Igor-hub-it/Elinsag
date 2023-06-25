@@ -31,6 +31,7 @@
 .card-news {
 
     text-align: center;
+    width: 300px;
 
     &__title {
         font-size: 1rem;
@@ -38,12 +39,12 @@
     }
 
     &__img img {
-        width: 300px;
+        width: 100%;
+
     }
 
     &__date {
         font-size: 14px;
-
     }
 
     &:hover {
