@@ -6,7 +6,7 @@ import FooterColumnSocial from './footerComponents/FooterColumnSocial.vue';
 </script>
 
 <template>
-  <footer class="footer fixed-bottom p-4">
+  <footer class="footer p-4">
     <div class="container-xl d-grid gap-4">
         <div class="row d-flex justify-content-between w-100 text-center">
             <!--Grid column-->
@@ -14,7 +14,7 @@ import FooterColumnSocial from './footerComponents/FooterColumnSocial.vue';
             <!--Grid column-->
       
             <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <!-- <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
               <h5 class="text-uppercase mb-0">Links</h5>
       
               <ul class="list-unstyled">
@@ -31,7 +31,7 @@ import FooterColumnSocial from './footerComponents/FooterColumnSocial.vue';
                   <a href="#!" class="text-dark">Link 4</a>
                 </li>
               </ul>
-            </div>
+            </div> -->
             <!--Grid column-->
       
             <!--Grid column-->
@@ -55,7 +55,8 @@ footer {
     width: 100%;
     min-height: 230px;
 
-    background-color: $footer-color;
+    background-color: $indigo;
+
 }
 
 </style>

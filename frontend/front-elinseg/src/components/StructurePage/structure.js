@@ -1,10 +1,7 @@
-import Button from './Button.vue';
-import CardNews from './CardNews.vue';
-
+import StructurePage from './StructurePage.vue';
 
 const components = [
-    {name: 'Button', component: Button},
-    {name: 'CardNews', component: CardNews}
+    {name: 'StructurePage', component: StructurePage}
 ]
 
 export default {

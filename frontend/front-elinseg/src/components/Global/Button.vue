@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <button class="myButton btn btn-secondary">
+  <button class="myButton btn btn-secondary text-uppercase">
     <slot>
 
     </slot>
@@ -14,6 +14,7 @@
 
 .myButton {
     border-radius: 0;
+    text-decoration-line: underline;
 }
 
 </style>

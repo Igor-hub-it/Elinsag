@@ -3,19 +3,19 @@
 const links = [
     {
         name: 'Об Элинсэг',
-        link: ''
+        link: 'info'
     },
     {
         name: 'Структура',
-        link: ''
+        link: 'structure'
     },
     {
         name: 'Партнёры',
-        link: ''
+        link: 'partners'
     },
     {
         name: 'Контакты',
-        link: ''
+        link: 'contacts'
     }
 ]
 
@@ -29,22 +29,34 @@ const links = [
             <li v-for="item in links"
                 :key="item"
                 class="m-2">
-                <a :href="item.link"
-                   class="column-about-us__link text-dark ">
+                <router-link :to="`${item.link}`"
+                   class="column-about-us__link  ">
                     {{ item.name }}
-                </a>
+                </router-link>
             </li>
         </ul>
     </div>
 </template>
 
 <style lang="scss">
+@import '../../../assets/scss/styles.scss';
+
 .column-about-us {
 
+    color: $white;
 
-    &__link:hover {
-        opacity: 0.5;
-        cursor: pointer;
+
+    &__link {
+        font-size: 16px;
+        color: white;
+
+
+        &:hover {
+            opacity: 0.5;
+            cursor: pointer;
+        }
     }
+    
+    
 }
 </style>

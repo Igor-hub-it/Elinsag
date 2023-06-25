@@ -1,12 +1,19 @@
 <script setup>
+import ContactsPageVue from './components/ContactsPage/ContactsPage.vue';
+import MainPage from './components/MainPage/MainPage.vue';
+import { RouterView, RouterLink } from 'vue-router';
 
 </script>
 
 <template>
   <div>
     <Header />
-    Hello, world!
+    <!-- <MainPage /> -->
+
+    <router-view/>
+
     <Footer />
+
   </div>
 </template>
 
@@ -23,4 +30,5 @@ div,
 p {
   margin: 0;
   padding: 0;
-}</style>
+}
+</style>
