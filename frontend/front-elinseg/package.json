@@ -12,7 +12,8 @@
     "sass-loader": "^13.3.2",
     "vue": "^3.3.4",
     "vue-router": "^4.2.2",
-    "vue-yandex-maps": "^0.11.15"
+    "vue-yandex-maps": "^0.11.15",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",

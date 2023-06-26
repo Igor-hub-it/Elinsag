@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import './assets/scss/styles.scss'
 import "bootstrap/dist/css/bootstrap.css";
+import store from './store/store';
 
 import headerComponents from './components/Header/header'
 import footerComponents from './components/Footer/footer'
@@ -17,6 +18,7 @@ app.use(footerComponents)
 app.use(globalComponents)
 // app.use(YmapPlugin, settings)
 app.use(router)
+app.use(store)
 
 app.mount('#app')
 

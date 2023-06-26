@@ -1,5 +1,9 @@
 <script>
+import { useRouter } from 'vue-router'
 import Button from './Button.vue'
+
+const router = useRouter();
+
 export default {
   components: { Button }, 
     name: "CardNews",
@@ -16,10 +20,8 @@ export default {
     },
     computed: {},
     methods: {
-        viewDetailsClick() {
-            this.$emit("viewDetails", this.news_data.id)
-        
-            // alert(this.news_data.id)
+        toDetails(id) {
+            this.$router.push({name: 'news', params: {Pid: id}})
       }
     }
 }
@@ -28,7 +30,7 @@ export default {
 
 <template>
 
-    <div class="card-news card h-100" @click="viewDetailsClick">
+    <div class="card-news card h-100" @click="toDetails(news_data.id)">
         <div class="card-news__img card-img-top">
             <img :src="`/examples/${news_data.img}.jpg`" alt="">
         </div>
