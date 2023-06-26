@@ -43,7 +43,7 @@ const nav = [
             </router-link>
           </div>
         </div>
-        <router-link :to="'news'" class="header__nav-item">
+        <router-link :to="'all_news'" class="header__nav-item">
           Мероприятия
         </router-link>
       </div>

@@ -33,7 +33,7 @@ const partners = [
       :key="partner"
       >
         <template v-slot:img>
-          <img :src="`/public/partners/${partner.img}`" alt="">
+          <img :src="`/partners/${partner.img}`" alt="">
         </template>
         <template v-slot:title>
           {{ partner.name }}

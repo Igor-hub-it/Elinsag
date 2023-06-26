@@ -34,8 +34,10 @@ const images = [
           </TextInfoPage>
 
           <div class="info-page__slider d-flex justify-content-between">
-            <img v-for="img in images" :key="img" :src="`/public/examples/${img}.jpg`" :alt="img">
+            <img v-for="img in images" :key="img" :src="`/examples/${img}.jpg`" :alt="img">
           </div>
+
+          <hr/>
 
           <TextInfoPage>
             <template v-slot:title>

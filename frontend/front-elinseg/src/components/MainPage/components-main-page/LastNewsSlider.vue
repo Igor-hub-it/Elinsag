@@ -51,7 +51,7 @@ const news = [
              {{ item.date }}
          </template>
          <template v-slot:img>
-             <img :src="`/public/examples/${item.img}.jpg`" :alt="item.img">
+             <img :src="`/examples/${item.img}.jpg`" :alt="item.img">
          </template>
          </CardNews>
      

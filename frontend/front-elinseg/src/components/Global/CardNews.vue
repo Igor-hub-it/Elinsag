@@ -1,26 +1,51 @@
-<script setup>
+<script>
+import Button from './Button.vue'
+export default {
+  components: { Button }, 
+    name: "CardNews",
+    props: {
+        news_data: {
+            type: Object,
+            default() {
+                return {}
+            }
+        }
+    },
+    data() {
+        return {}
+    },
+    computed: {},
+    methods: {
+        viewDetailsClick() {
+            this.$emit("viewDetails", this.news_data.id)
+        
+            // alert(this.news_data.id)
+      }
+    }
+}
 
 </script>
 
 <template>
 
-    <div class="card-news card h-100">
+    <div class="card-news card h-100" @click="viewDetailsClick">
         <div class="card-news__img card-img-top">
-            <slot name="img"></slot>
+            <img :src="`/examples/${news_data.img}.jpg`" alt="">
         </div>
 
         <div class="card-body">
             <div class="card-news__title">
-                <slot name="title"></slot>
+                {{ news_data.title }}
             </div> 
         </div>
 
         <div class="card-footer">
             <div class="card-news__date">
-                <slot name="date"></slot>
+                {{ news_data.date }}
             </div> 
-          </div>        
-    </div>
+          </div>   
+
+        </div>
 
   
 </template>

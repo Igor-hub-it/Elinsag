@@ -90,7 +90,7 @@ const vicePresident = {
           </template>
           <template v-slot:contacts>
             <a class="contact-info__link" v-for="contact in president.contacts" :key="contact" :href="contact.link">
-              <img :src="`/public/social/${contact.icon}.svg`" :alt="contact.icon"/>
+              <img :src="`/social/${contact.icon}.svg`" :alt="contact.icon"/>
               <span class="contact-info__title">
                 {{ contact.title }}
               </span>
@@ -100,7 +100,7 @@ const vicePresident = {
         </ContactPerson>
 
         <div class="contacts-page__info-img">
-          <img :src="`/public/persons/${president.photo}.jpg`" alt="">
+          <img :src="`/persons/${president.photo}.jpg`" alt="">
         </div>
 
       </div>
@@ -109,7 +109,7 @@ const vicePresident = {
 
       <div class="contacts-page__info-person d-flex">
         <div class="contacts-page__info-img">
-          <img :src="`/public/persons/${vicePresident.photo}.jpg`" alt="">
+          <img :src="`/persons/${vicePresident.photo}.jpg`" alt="">
         </div>
 
         <ContactPerson style="margin-left: 3rem">
@@ -130,7 +130,7 @@ const vicePresident = {
           </template>
           <template v-slot:contacts>
             <a v-for="contact in vicePresident.contacts" :key="contact" :href="contact.link">
-              <img :src="`/public/social/${contact.icon}.svg`" :alt="contact.icon"/>
+              <img :src="`/social/${contact.icon}.svg`" :alt="contact.icon"/>
               
             </a>
             
