@@ -56,6 +56,7 @@ footer {
     min-height: 230px;
 
     background-color: $indigo;
+    bottom: 0;
 
 }
 

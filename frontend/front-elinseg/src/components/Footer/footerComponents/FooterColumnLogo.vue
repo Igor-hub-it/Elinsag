@@ -6,7 +6,7 @@ import Button from "../../Global/Button.vue";
 <template>
     <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-center">
         <router-link :to="'/'" class="column-logo__logo m-2">
-            <img src="../../../assets/logo/logo1.svg" alt="">
+            <img src="../../../assets/logo/white-logo.svg" alt="">
         </router-link>
 
         <div class="column-logo__button">

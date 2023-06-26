@@ -7,8 +7,8 @@
         <div class="card-partners__img">
             <slot name="img"/>
         </div>
-        <div class="card-partners__content">
-            <div class="card-partners__title">
+        <div class="card-partners__content my-auto fw-bold">
+            <div class="card-partners__title text-uppercase">
                 <slot name="title"/>
             </div>
             <div class="card-partners__text">
@@ -29,24 +29,29 @@
     padding: 1rem;
 
     &__content {
-
+        text-align: end;
+        margin-left: 1rem;
     }
 
     &__title {
         @include title;
         margin-bottom: 1rem;
-        font-size: 2rem;
-        margin-right: 1rem;
+        font-size: 20px;
+        text-decoration-line: underline;
+        font-weight: bold !important;
+        text-align: end;
+        
     }
 
     &__text {
         margin-right: 1rem;
+        font-weight: bold !important;
 
     }
 
     &__img img {
         max-width: 400px;
-        z-index: 5;
+        
     }
 }
 

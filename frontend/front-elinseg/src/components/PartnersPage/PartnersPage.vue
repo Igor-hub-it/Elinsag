@@ -4,18 +4,18 @@ import CardPartners from './components-partners-news/CardPartners.vue';
 const partners = [
   {
     name: 'Дальневосточный Федеральный Университет',
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, accusantium?', 
-    img: 'dvfu.png'
+    text: '', 
+    img: 'dvfu'
   },
   {
     name: 'Кэскил',
     text: 'Кэскил - это организация для студентов из Якутии, обучающихся в Приморском крае',
-    img: 'keskil.jpg'
+    img: 'keskil'
   },
   {
     name: 'Амисхал',
     text: '"Автономная некоммерческая организация «Амисхал» г. Владивосток. Целью которой является объединение земляков из Республики Бурятия, Забайкальского края, Иркутской области и укрепление их отношений. Проведение различных мероприятий для земляков, тем самым почитая традиции бурят. Продвижение культуры бурятского народа в г. Владивосток."',
-    img: ''
+    img: 'amishal'
   }
 ]
 
@@ -33,7 +33,7 @@ const partners = [
       :key="partner"
       >
         <template v-slot:img>
-          <img :src="`/partners/${partner.img}`" alt="">
+          <img :src="`/partners/${partner.img}.svg`" alt="">
         </template>
         <template v-slot:title>
           {{ partner.name }}

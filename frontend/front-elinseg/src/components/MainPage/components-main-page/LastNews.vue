@@ -1,7 +1,7 @@
 <script setup>
 
 const last_news = {
-    title: 'Последняя новость',
+    title: 'Предстоящие мероприятия',
     img: ''
 }
 
@@ -54,7 +54,7 @@ const last_news = {
     &__block {
         position: absolute;
         top: 40%;
-        left: 40%;
+        left: 30%;
         color: $white;
         text-align: center;
         font-weight: bold;

@@ -13,8 +13,8 @@
 <style>
 
 .myButton {
-    border-radius: 0;
-    text-decoration-line: underline;
+    border-radius: 0 !important;
+    text-decoration-line: underline !important;
 }
 
 </style>

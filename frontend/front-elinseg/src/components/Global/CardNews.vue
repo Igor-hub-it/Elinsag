@@ -32,7 +32,7 @@ export default {
 
     <div class="card-news card h-100" @click="toDetails(news_data.id)">
         <div class="card-news__img card-img-top">
-            <img :src="`/examples/${news_data.img}.jpg`" alt="">
+            <img :src="`/news-page/${news_data.img}.jpg`" alt="">
         </div>
 
         <div class="card-body">

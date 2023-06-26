@@ -6,11 +6,11 @@ const targets = [
   'Повышение национального самосознания',
   'Сотрудничество, взаимодействие и обмен опытом с другими организациями',
   'Помощь в саморазвитии, самореализации членов Организации путем передачи опыта и знаний',
-  'егулярное проведение мероприятий направленных на поддержку талантливых студентов'
+  'Регулярное проведение мероприятий направленных на поддержку талантливых студентов'
 ]
 
 const images = [
-  'dbk', 'dbk', 'dbk', 'dbk'
+  'stud-arm', 'nabor', 'sport', 'dbk'
 ]
 
 </script>
@@ -26,7 +26,7 @@ const images = [
           
           <TextInfoPage>
             <template v-slot:title>
-              Видение
+              Кто мы такие
             </template>
             <template v-slot:text>
               Мы являемся источником поддержки студентов преимущественно из Республики Бурятия, Забайкальского Края и Иркутской области во Владивостоке, создаем условия для активного участия в жизни и устойчивом развитии бурятского общества, а также для раскрытия потенциала студентов
@@ -34,7 +34,7 @@ const images = [
           </TextInfoPage>
 
           <div class="info-page__slider d-flex justify-content-between">
-            <img v-for="img in images" :key="img" :src="`/examples/${img}.jpg`" :alt="img">
+            <img v-for="img in images" :key="img" :src="`/info-page/${img}.jpg`" :alt="img">
           </div>
 
           <hr/>
@@ -79,8 +79,10 @@ const images = [
 
      &__slider img {
       width: 300px;
+      height: 300px;
       margin-top: 1rem;
       margin-bottom: 1rem;
+      object-fit: cover;
      }
 }
 

@@ -28,10 +28,10 @@ const nav = [
       <router-link :to="'/'" class="header__logo my-auto">
         <img src="../../assets/logo/logo1.svg" alt="logo">
       </router-link>
-      <div class="header__search my-auto">
-        <!-- реализовать поиск -->
+      <!-- <div class="header__search my-auto">
+         реализовать поиск 
         поиск по сайту
-      </div>
+      </div> -->
       <div class="header__nav my-auto d-flex justify-content-between">
         <div class="header__nav-nav">
           <p class="header__nav-item dropbtn" style="text-decoration-line: underline">
